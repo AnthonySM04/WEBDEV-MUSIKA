@@ -1,0 +1,167 @@
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    background-image: url('background_1920x1080.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff; /* Change text color to white */
+    overflow-x: scroll; /* Hide vertical scrollbar */
+}
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 0.5rem 2rem; /* Reduce padding to make header smaller */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 4px rgba(255, 251, 251, 0.2); /* Add shadow for depth */
+    width: 100%;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+}
+header .logo {
+    height: 100px; /* Set a fixed height */
+    width: 100px; /* Set a fixed width */
+    border-radius: 50%; /* Make the logo circular */
+
+    object-fit: cover; /* Ensure the logo is not distorted */
+}
+.logo-container{
+    display: flex;
+    width: 50%;
+}
+.logo-name{
+    width: 10rem;
+}
+.header-text {
+    flex-direction: column;
+    text-align: left;
+    flex-grow: 1; /* Allow the header text to take the remaining space */
+    padding-left: 1rem; /* Add some padding to separate text from the logo */
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Reduce font size */
+}
+header p {
+    margin: 0.5rem 0 0;
+}
+main {
+    box-shadow: 0 5px 10px rgba(255, 251, 251, 0.5);
+    padding: 3rem; /* Adjust padding for better spacing */
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box; /* Ensure padding doesn't affect total width */
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a dark background with transparency */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure main container doesn't overflow */
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; /* Reduce bottom margin */
+    width: 50%;
+    margin-right: 50px;
+}
+.search-container input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+}
+.search-container button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #1DB954;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+.search-container button:hover {
+    background-color: #17a047;
+}
+#results{
+    margin-right: 50px;
+}
+.results-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    height: calc(100vh - 300px); /* Adjust height to fit within viewport */
+    overflow: hidden; /* Hide overflow to ensure no external scrollbars */
+    padding: 30px;
+}
+.spotify-results, .youtube-results {
+    width: 48%; /* Make both Spotify and YouTube results wider */
+    max-height: 100%;
+    background-color: rgba(47, 79, 79, 0.9); /* Add a white background with transparency */
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000; /* Ensure text color is black for readability */
+    overflow-y: auto; /* Allow vertical scrolling for results */
+}
+.track, .video {
+    background-color: rgba(18, 41, 41, 0.644);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.track h3, .video h3 {
+    margin: 0 0 0.5rem;
+    color:whitesmoke; /* Ensure header text color is black */
+}
+.track p {
+    margin: 0.25rem 0;
+    color: whitesmoke; /* Ensure paragraph text color is black */
+}
+.track button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+.track button:hover {
+    background-color: darkslategray;
+}
+iframe {
+    width: 100%;
+    max-width: 100%;
+}
+footer {
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    width: 100%; /* Ensure footer spans full width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    display: flex;
+}
+::-webkit-scrollbar{
+    height: .1rem;
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(3, 62, 16);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 154, 38);
+    border-radius: 15rem;
+}

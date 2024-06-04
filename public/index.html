@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musika</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo4.png" alt="Logo" class="logo">
+            <div class="header-text">
+                <img src="logo-name.png" alt="" class="logo-name">
+                <p>A music search application <br>
+                integrating Spotify and YouTube</p>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for songs, artists, albums...">
+            <button id="searchButton" class="btn">Search</button>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="results-container">
+                <div id="results" class="spotify-results"></div>
+                <div id="youtubeResults" class="youtube-results"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Musika. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
