@@ -1,7 +1,7 @@
 # Musika: Your Personal Music Search Engine
 
 ## Overview
-Musika is an interactive web application designed to help users discover music from Spotify and YouTube. By integrating with the Spotify API and the YouTube Data API, the application provides detailed information about songs, artists, albums, and related videos, offering a rich informational experience.
+Musika is an interactive web application designed to help users discover music from Spotify and YouTube. By integrating with the Spotify API and the YouTube Data API, the application provides information about songs, artists, albums, and related videos, offering a rich and fun experience.
 
 ## Features
 - **Dynamic Content Update:** Utilizes JavaScript to manipulate the DOM and dynamically update content based on user interactions.
