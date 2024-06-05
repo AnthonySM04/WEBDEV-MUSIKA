@@ -21,7 +21,7 @@ The project consists of the following key files and directories:
 - `server.js`: Contains the server-side code using Express.js and WebSocket.
 - `README.md`: Provides information about the project.
 
-## Getting Started
+## LOCAL SETUP
 ### Prerequisites
 Ensure you have Node.js and npm installed on your machine.
 
