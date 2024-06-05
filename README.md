@@ -38,4 +38,4 @@ Ensure you have Node.js and npm installed on your machine.
 3. Open a web browser and go to http://localhost:8080.
 
 ### Usage
-- **Enter the name of a song, artist, or album in the search box and click "Search" to see detailed information from Spotiy, if you want to listen to that specific song then press the Watch on Youtube button for the related videos for that song.**
+- **Enter the name of a song, artist, or album in the search box and click "Search" to see information from Spotify such as the artist and the album it is from, if you want to listen to that specific song then press the Watch on Youtube button for the related videos for that song.**
