@@ -31,7 +31,7 @@ Ensure you have Node.js and npm installed on your machine.
    npm install express ws
 
 ### Running the application
-1. Download all of the files from the repository
+1. Download and extract all of the ZIP files from the repository
 2. Go to the terminal of the server and type:
    ```bash
    node server.js
