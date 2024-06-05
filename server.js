@@ -4,10 +4,10 @@ const WebSocket = require('ws');
 
 const app = express();
 
-// Serve static files from the public directory
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Create a WebSocket server
+
 const server = require('http').createServer(app);
 const wss = new WebSocket.Server({ server });
 
@@ -15,7 +15,7 @@ wss.on('connection', ws => {
     console.log('Client connected');
     ws.on('message', message => {
         console.log(`Received message: ${message}`);
-        // Broadcast the message to all clients
+        
         wss.clients.forEach(client => {
             if (client.readyState === WebSocket.OPEN) {
                 client.send(message);

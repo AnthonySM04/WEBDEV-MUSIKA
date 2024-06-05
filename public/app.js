@@ -4,7 +4,7 @@ const redirectUri = 'http://localhost:8000';
 
 let accessToken = '';
 
-// WebSocket connection
+
 const ws = new WebSocket('ws://localhost:8080');
 
 ws.onopen = () => {
@@ -13,7 +13,7 @@ ws.onopen = () => {
 
 ws.onmessage = (event) => {
     const message = event.data;
-    // Handle incoming messages (e.g., new search results or updates)
+    
     console.log('Received message:', message);
 };
 
@@ -27,14 +27,14 @@ function sendMessage(message) {
     }
 }
 
-// Event listener for search button
+
 document.getElementById('searchButton').addEventListener('click', () => {
     const query = document.getElementById('search').value;
     searchSpotify(query);
     sendMessage(`New search: ${query}`);
 });
 
-// Function to search Spotify
+
 const searchSpotify = async (query) => {
     try {
         if (!accessToken) {
@@ -52,7 +52,7 @@ const searchSpotify = async (query) => {
     }
 };
 
-// Function to get Spotify access token
+
 const getAccessToken = async () => {
     const authString = btoa(`${clientId}:${clientSecret}`);
     const response = await fetch('https://accounts.spotify.com/api/token', {
@@ -67,7 +67,7 @@ const getAccessToken = async () => {
     accessToken = data.access_token;
 };
 
-// Function to display search results
+
 const displayResults = (data) => {
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = '';
@@ -88,7 +88,7 @@ const displayResults = (data) => {
     }
 };
 
-// Function to search YouTube
+
 const searchYouTube = async (query) => {
     try {
         const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&q=${encodeURIComponent(query)}&key=AIzaSyCSz12XVZNo3Un6K6ACz1rA2Wj-x0q3nCA`);
@@ -99,7 +99,7 @@ const searchYouTube = async (query) => {
     }
 };
 
-// Function to display YouTube search results
+
 const displayYouTubeResults = (data) => {
     const youtubeResultsDiv = document.getElementById('youtubeResults');
     youtubeResultsDiv.innerHTML = '';
